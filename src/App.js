@@ -10,18 +10,8 @@ function App() {
     firebase.auth()
   );
 
-  const logout = () => {
-    firebase.auth().signOut();
-  }
-
-  const login = () => {
-    firebase.auth().signInWithEmailAndPassword("helenmckaypersonal@gmail.com", "THISISMYWEBSITE");
-  }
-
   return (
     <div className="App">
-      {user ? <button onClick={logout}>log out</button> : <button onClick={login}>log in</button>}
-      {user_loading && <p>loading...</p>}
       {user && <p>Hello handsome</p>}
     </div>
   );
