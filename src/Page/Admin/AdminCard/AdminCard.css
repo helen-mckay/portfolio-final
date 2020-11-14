@@ -1,0 +1,12 @@
+.adminCard {
+    background-color: gray;
+}
+
+.pic_container {
+    height: 200px;
+}
+
+.pic_container img {
+    height: 100%;
+    width: auto;
+}

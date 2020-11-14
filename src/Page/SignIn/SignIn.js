@@ -5,13 +5,20 @@ import firebase from '../../firebase';
 const SignIn = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState(null);
     
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if ((email !== "") && (password !== ""))
         {
-            firebase.auth().signInWithEmailAndPassword(email, password);
+            firebase.auth().signInWithEmailAndPassword(email, password).catch(error => {
+                console.log(error);
+                setError(error);
+            }).then(() => {
+                setEmail("");
+                setPassword("");
+            })
         }
     }
 
@@ -29,6 +36,7 @@ const SignIn = () => {
                 </div>
                 <input type="submit"/>
             </form>
+            {error && <p>{error.code}</p>}
         </div>
     );
 }
