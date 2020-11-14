@@ -20,7 +20,9 @@ const AdminCardImageFetcher = (props) => {
 
     return(
         <div className="pic_container">
-            <img src={downloadURL} alt=""/>
+            {URL_loading ?
+            <p>Loading image...</p>
+            :<img src={downloadURL} alt=""/>}
         </div>
     )
 }
@@ -45,6 +47,7 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
     const [tech, setTech] = useState([...data.tech]);
     const [links, setLinks] = useState([...data.links]);
     const [description, setDescription] = useState(data.description);
+    const [publicToggle, setPublicToggle] = useState(data.publicToggle);
 
     const [newImage, setNewImage] = useState(null);
 
@@ -58,6 +61,7 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
         setLinks([...data.links]);
         setDescription(data.description);
         setNewImage(null);
+        setPublicToggle(data.publicToggle);
     }
 
     const handleSubmit = (e) => {
@@ -103,7 +107,8 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
             tech: tech,
             links: links,
             description: description,
-            date: data.date
+            date: data.date,
+            publicToggle: publicToggle
         });
     }
 
@@ -178,6 +183,10 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
         e.target.value = null;
     }
 
+    const handlePublicToggle = () => {
+        setPublicToggle(!publicToggle);
+    }
+
     //creates unique keys for these mapped elements upon render!
         //this way, it's not dependent on index or value (which can cause the app to break)
 
@@ -186,11 +195,15 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
 
     return(
         <div className="adminCard">
+            {publicToggle ? <p>This card is public</p> : <p>This card is private</p>}
             <form onSubmit={e => handleSubmit(e)}>
+                <div>
+                    <label>toggle public/private</label>
+                    <input type="checkbox" checked={publicToggle} onChange={handlePublicToggle}/>
+                </div>
+                
                 <p>Original image:</p>
-                <AdminCardImageFetcher
-                    doc_id={doc_id}
-                />
+                {hasImage && <AdminCardImageFetcher doc_id={doc_id}/>}
                 <p>New image:</p>
                 <div className="pic_container"> 
                     {newImage && <img src={URL.createObjectURL(newImage)} alt=""/>}

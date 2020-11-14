@@ -8,11 +8,12 @@ import HomeCard from './HomeCard/HomeCard';
 const Home = () => {
 
     const [snapshot, snapshot_loading, snapshot_error] = useCollection(
-        firebase.firestore().collection('projects')
+        firebase.firestore().collection('projects').where("publicToggle", "==", true)
     );
 
     return(
         <div>
+            {snapshot_error && console.log("something wrong on the homepage" + snapshot_error)}
             {snapshot && snapshot.docs.map((doc) => (
                 <HomeCard
                     key={doc.id}

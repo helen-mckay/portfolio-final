@@ -11,7 +11,10 @@ const HomeCardImageFetcher = (props) => {
 
     return(
         <div>
-            <img src={downloadURL} alt=""/>
+            {URL_loading ?
+            <p>Loading image...</p>
+            :<img src={downloadURL} alt=""/>
+            }
         </div>
     )
 }

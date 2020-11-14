@@ -21,7 +21,8 @@ const Admin = () => {
             tech: ["technology 1", "technology 2"],
             links: ["some link"],
             description: "LOREM IPSUM",
-            date: Date.now()
+            date: Date.now(),
+            publicToggle: false
         });
     }
 
@@ -38,6 +39,7 @@ const Admin = () => {
     return(
         <div>
             <h2>This is the admin page</h2>
+            {snapshot_error && console.log("something wrong on the adminpage" + snapshot_error)}
             <button onClick={doSignOut}>log out</button>
             {snapshot && snapshot.docs.map((doc) => (
                 <AdminCard
