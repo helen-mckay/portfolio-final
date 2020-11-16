@@ -13,7 +13,7 @@ const Home = () => {
 
     return(
         <div>
-            {snapshot_error && console.log("something wrong on the homepage" + snapshot_error)}
+            {snapshot_loading && <p>Loading...</p>}
             {snapshot && snapshot.docs.map((doc) => (
                 <HomeCard
                     key={doc.id}

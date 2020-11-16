@@ -19,7 +19,9 @@ const Admin = () => {
         firebase.firestore().collection('projects').add({
             title: "new title",
             tech: ["technology 1", "technology 2"],
-            links: ["some link"],
+            github: "",
+            codepen: "",
+            live: "",
             description: "LOREM IPSUM",
             date: Date.now(),
             publicToggle: false

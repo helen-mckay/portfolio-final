@@ -45,7 +45,9 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
 
     const [title, setTitle] = useState(data.title);
     const [tech, setTech] = useState([...data.tech]);
-    const [links, setLinks] = useState([...data.links]);
+    const [github, setGithub] = useState(data.github);
+    const [codepen, setCodepen] = useState(data.codepen);
+    const [live, setLive] = useState(data.live);
     const [description, setDescription] = useState(data.description);
     const [publicToggle, setPublicToggle] = useState(data.publicToggle);
 
@@ -58,7 +60,9 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
     const discardChanges = () => {
         setTitle(data.title);
         setTech([...data.tech]);
-        setLinks([...data.links]);
+        setGithub(data.github);
+        setCodepen(data.codepen);
+        setLive(data.live);
         setDescription(data.description);
         setNewImage(null);
         setPublicToggle(data.publicToggle);
@@ -105,7 +109,9 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
         updateCard(doc_id, {
             title: title,
             tech: tech,
-            links: links,
+            github: github,
+            codepen: codepen,
+            live: live,
             description: description,
             date: data.date,
             publicToggle: publicToggle
@@ -151,32 +157,6 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
         setTech([...newArr]);
     }
 
-    const handleLinkChange = (e, index) => {
-        let newArr = [...links];
-        newArr[index] = e.target.value;
-
-        setLinks(newArr);
-    }
-
-    const deleteLink = (index) => {
-        let newArr = [...links];
-        if (newArr.length === 1)
-        {
-            newArr = [];
-        }
-        else
-        {
-            newArr.splice(index, 1);
-        }
-        setLinks(newArr);
-    }
-
-    const addLink = () => {
-        let newArr = [...links, ""];
-        
-        setLinks(newArr);
-    }
-
     const handleUploadChange = (e) => {
         setNewImage(e.target.files[0]);
 
@@ -191,7 +171,6 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
         //this way, it's not dependent on index or value (which can cause the app to break)
 
     let techKeyCount = 0;
-    let linkKeyCount = 0;
 
     return(
         <div className="adminCard">
@@ -240,18 +219,28 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
                     <button onClick={addTech}>Add tech</button>
                 </div>
                 <div>
-                    {links && links.map((l, index) => (
-                        <div key={linkKeyCount++}>
-                            <label>link {index}</label>
-                            <input 
-                                type="text" 
-                                value={links[index]} 
-                                onChange={e => handleLinkChange(e, index)}
-                            />
-                            <button onClick={() => deleteLink(index)}>Delete</button>
-                        </div>
-                    ))}
-                    <button onClick={addLink}>Add link</button>
+                    <label>GitHub link</label>
+                    <input
+                        type="text"
+                        value={github}
+                        onChange={e => setGithub(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label>CodePen link</label>
+                    <input
+                        type="text"
+                        value={codepen}
+                        onChange={e => setCodepen(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label>Live site link</label>
+                    <input
+                        type="text"
+                        value={live}
+                        onChange={e => setLive(e.target.value)}
+                    />
                 </div>
                 <div>
                     <textarea 
