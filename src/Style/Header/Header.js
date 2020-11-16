@@ -1,7 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-import me from '../Images/me.jpg';
 import github from '../Images/github.png';
 import codepen from '../Images/codepen.png';
 import linkedin from '../Images/linkedin.png';
@@ -20,10 +19,7 @@ const MediaLink = (props) => {
 const Header = () => {
     return(
         <header>
-            <div id="header-pic">
-                <img src={me}/>
-            </div>
-            <h1><span id="name">I'm Helen McKay,</span> a web developer seeking work in <span>Houston, TX.</span></h1>
+            <h1>Helen McKay</h1>
             <ul id="media">
                 <li><MediaLink image={github} link="https://github.com/helen-mckay"/></li>
                 <li><MediaLink image={codepen} link="https://codepen.io/helen-mckay"/></li>

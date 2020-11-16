@@ -4,7 +4,7 @@ import firebase from '../../../firebase';
 
 import { useDownloadURL } from 'react-firebase-hooks/storage';
 
-import './HomeCard.css';
+import './PortfolioCard.css';
 
 const HomeCardImageFetcher = (props) => {
     const [downloadURL, URL_loading, URL_error] = useDownloadURL(
