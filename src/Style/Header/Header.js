@@ -28,7 +28,8 @@ const Header = () => {
             </ul>
             <nav>
                 <ul>
-                    <li><NavLink to="/" exact activeClassName="activeNavLink">Portfolio</NavLink></li>
+                    <li><NavLink to="/" exact activeClassName="activeNavLink">Home</NavLink></li>
+                    <li><NavLink to="/portfolio" exact activeClassName="activeNavLink">Portfolio</NavLink></li>
                     <li><NavLink to="/bio" exact activeClassName="activeNavLink">About Me</NavLink></li>
                     <li><a href="" id="resume-link">Resume</a></li>
                 </ul>

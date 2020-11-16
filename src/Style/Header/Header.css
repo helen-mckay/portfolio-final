@@ -1,34 +1,132 @@
+header {
+    display: grid;
+    padding: 0.4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title media"
+        "nav nav";
+    align-items: center;
+    background-color: var(--white);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--accent-orange);
+    font-weight: bold;
+    grid-area: title;
+    justify-self: center;
+    text-align: center;
+    margin: 0 1rem;
+}
+
 #media {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
+    width: 100%;
+    grid-area: media;
+    justify-self: start;
 }
 
 #media li {
-    height: 50px;
-    width: 50px;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 0 0.25rem;
 }
 
 .mediaLink {
     border-radius: 50%;
 }
 
+.mediaLink img:hover {
+    filter: brightness(70%);
+}
+
 .mediaLink img {
     height: 100%;
     width: 100%;
+    transition: filter ease 0.3s;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: 1rem;
+    display: flex;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 nav ul li {
     text-align: center;
+    margin: 0 1rem;
 }
 
 nav ul li a {
     text-decoration: none;
+    color: var(--accent-red);
+    font-size: 1.5rem;
+    border-bottom: 0.5rem solid transparent;
+}
+
+.activeNavLink {
+    border-bottom: 0.5rem solid var(--accent-red);
+}
+
+#resume-link {
+    background-color: var(--accent-blue);
+    color: var(--white);
+    padding: 0.5rem;
+    transition: filter ease 0.3s;
+    border-bottom: none;
+}
+
+#resume-link:hover {
+    filter: brightness(85%);
+}
+
+@media screen and (min-width: 600px)
+{
+    nav {
+        justify-content: center;
+        justify-self: center;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    #media {
+        justify-self: end;
+        align-self: center;
+    }
+
+    header {
+        padding: 0.4rem 3rem 0.4rem 3rem;
+        grid-template-columns: 4fr 1fr;
+        justify-content: center;
+    }
+
+    header h1 {
+        justify-self: start;
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    #media li {
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    nav {
+        justify-self: start;
+    }
+
 }

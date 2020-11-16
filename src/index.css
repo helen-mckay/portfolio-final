@@ -1,0 +1,23 @@
+:root {
+    font-size: 12px;
+    font-family: "Spartan", sans-serif;
+    --white: #eee;
+    --gray: #222;
+    --accent-blue: #1284b5;
+    --accent-orange: #ff9500;
+    --accent-red: #c0218d;
+    color: var(--gray);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    overflow-x: hidden;
+}

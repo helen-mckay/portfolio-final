@@ -3,16 +3,17 @@
     background-size: cover;
     background-position: center center;
     height: 600px;
-    color: white;
+    color: var(--white);
     display: flex;
     flex-flow: column nowrap;
 }
 
-#hero h2 {
+#hero-content h2 {
     font-size: 4rem;
     margin: auto;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
+    color: var(--white);
 }
 
 #hero-content {
@@ -41,21 +42,24 @@
     margin: 1rem 0.5rem 0rem 0.5rem;
     color: white;
     text-decoration: none;
+    box-shadow: 2px 2px 2px black;
+    transition: filter ease 0.3s;
+}
+
+.hero-button:hover {
+    filter: brightness(85%);
+}
+
+.hero-button:active {
+    transform: translateY(0.5rem);
 }
 
 #work-link {
-    background-color: orange;
+    background-color: var(--accent-orange);
 }
 
 #story-link {
-    background-color: red;
-}
-
-#Home h3 {
-    font-size: 2.5rem;
-    color: orange;
-    line-height: 3.25rem;
-    text-align: center;
+    background-color: var(--accent-red);
 }
 
 span {
@@ -63,21 +67,89 @@ span {
     padding: 0 0.5rem;
 }
 
-.work-span {
-    border-bottom: 5px solid orange;
+#hero-resume-link {
+    background-color: var(--accent-blue);
 }
 
-.life-span {
-    border-bottom: 5px solid red;
+#Home section h3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
 }
 
-#Home > div {
+.white-section {
     padding: 1rem;
+} 
+
+.white-section h3 {
+    text-align: left;
+}
+
+.color-1, .color-2, .color-3 {
+    color: var(--white);
+}
+
+.color-1 h3, .color-2 h3, .color-3 h3 {
+    text-align: right;
+    padding: 1rem;
+}
+
+#triangle-1, #triangle-2, #triangle-3, #triangle-4, #triangle-5, #triangle-6 {
+    height: 0;
+    width: 0;
+}
+
+.color-1 {
+    background-color: var(--accent-orange);
+}
+
+.color-2 {
+    background-color: var(--accent-red);
+}
+
+.color-3 {
+    background-color: var(--accent-blue);
 }
 
 @media screen and (min-width: 600px)
 {
     #hero-content {
         justify-content: flex-start;
+    }
+
+    #triangle-1 {
+        border-left: 2000px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 100px solid var(--accent-orange);
+    }
+
+    #triangle-2, #triangle-4 {
+        border-left: 2000px solid transparent;
+        border-top: 100px solid var(--accent-orange);
+        border-bottom: 10px solid transparent;
+    }
+
+    #triangle-3 {
+        border-left: 2000px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 100px solid var(--accent-red);
+    }
+
+    #triangle-4 {
+        border-left: 2000px solid transparent;
+        border-top: 100px solid var(--accent-red);
+        border-bottom: 10px solid transparent;
+    }
+
+    #triangle-5 {
+        border-left: 2000px solid transparent;
+        border-top: 10px solid transparent;
+        border-bottom: 100px solid var(--accent-blue);
+    }
+
+    #triangle-6 {
+        border-left: 2000px solid transparent;
+        border-top: 100px solid var(--accent-blue);
+        border-bottom: 10px solid transparent;
     }
 }
