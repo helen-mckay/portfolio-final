@@ -78,9 +78,9 @@ span {
     line-height: 3.25rem;
 }
 
-.white-section {
-    padding: 1rem;
-} 
+#white-1 {
+    padding-top: 4rem;
+}
 
 .white-section h3 {
     text-align: left;
@@ -91,9 +91,12 @@ span {
     font-size: 1.5rem;
 }
 
+.color-1, .color-2, .color-3, .white-section {
+    padding: 1rem;
+}
+
 .color-1 h3, .color-2 h3, .color-3 h3 {
     text-align: right;
-    padding: 1rem;
 }
 
 #triangle-1, #triangle-2, #triangle-3, #triangle-4, #triangle-5, #triangle-6 {
@@ -103,26 +106,95 @@ span {
 
 .color-1 {
     background-color: var(--accent-orange);
-    display: flex;
-    flex-flow: column nowrap;
 }
 
-.color-1 ul {
+#color-1-content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem;
+}
+
+#color-1-content ul {
     align-self: flex-end;
     justify-self: flex-end;
     list-style: none;
     text-align: right;
-    margin: 1rem;
 }
 
-.color-1 ul li {
-    margin: 1rem;
+#color-1-content > ul li {
+    margin: 1rem 0;
     font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#color-1-content ul li > ul li {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0;
 }
 
 .color-2 {
     background-color: var(--accent-red);
+
 }
+
+#color-2-content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem;
+}
+
+#color-2-content > a {
+    text-align: right;
+    text-decoration: none;
+    color: var(--accent-red);
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+    transition: filter ease 0.3s;
+    margin: 1rem 0 1rem auto;
+}
+
+#color-2-content > a:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+#color-2-content p {
+    text-align: right;
+    margin: 1rem 0;
+}
+
+#color-2-content ul {
+    display: flex;
+    list-style: none;
+    align-self: flex-end;
+}
+
+#color-2-content ul li {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+#color-2-content ul li a {
+    height: 100%;
+    width: 100%;
+    transition: filter ease 0.3s;
+    margin: 1rem 0;
+}
+
+#color-2-content ul li a:hover {
+    filter: brightness(85%);
+}
+
+#color-2-content ul li img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
 
 .color-3 {
     background-color: var(--accent-blue);
@@ -130,6 +202,10 @@ span {
 
 @media screen and (min-width: 600px)
 {
+    #hero {
+        height: 800px;
+    }
+
     #hero-content {
         justify-content: flex-start;
     }
@@ -168,5 +244,16 @@ span {
         border-left: 2000px solid transparent;
         border-top: 100px solid var(--accent-blue);
         border-bottom: 10px solid transparent;
+    }
+
+    .color-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            ". content";
+    }
+
+    #color-1-content {
+        grid-area: content;
     }
 }

@@ -1,10 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import github from '../../Style/Images/github.png';
-import codepen from '../../Style/Images/codepen.png';
-import linkedin from '../../Style/Images/linkedin.png';
-import email from '../../Style/Images/email.png';
+import githubw from '../../Style/Images/github-w.png';
+import codepenw from '../../Style/Images/codepen-w.png';
 
 import './Home.css';
 
@@ -27,31 +25,68 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <section className="white-section">
+            <section className="white-section" id="white-1">
                 <h3>I infuse joy into everything I make.</h3>
                 <p>Especially websites. I'm a firm believer that the user's experience should be a smooth and joyous one.</p>
             </section>
             <div id="triangle-1"></div>
             <section className="color-1">
-                <h3>My design and development philosophy:</h3>
-                <ul>
-                    <li>Understand the project as a fusion of art and code.</li>
-                    <li>Design it mobile-first, build it responsive.</li>
-                    <li>Fun to build, fun to use.</li>
-                </ul>
+                <div id="color-1-content">
+                    <h3>My design and development philosophy:</h3>
+                    <ul>
+                        <li>Understand the project as a fusion of art and code.</li>
+                        <li>
+                            <ul>
+                                <li>I studied Software Engineering and Visual Arts at UT Dallas.<br/>I wear the hats of both engineer and artist with every application I build. </li>
+                            </ul>
+                        </li>
+                        <li>Design it mobile-first, build it responsive.</li>
+                        <li>
+                            <ul>
+                                <li>Strong user experience begins with support for all users on all browsers on all devices. </li>
+                            </ul>
+                        </li>
+                        <li>Fun to build, fun to use.</li>
+                        <li>
+                            <ul>
+                                <li>Joy makes a user experience memorable&mdash;an essential quality for companies that need users returning to their application again and again and again.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <div id="triangle-2"></div>
             <section className="white-section">
                 <h3>I make all kinds of things.</h3>
-                <p>I've got a special focus on single applications </p>
+                <p>But I've got a special focus on single-page web applications.</p>
+                <p>Top skills:</p>
+                <ul>
+                    <li>React</li>
+                    <li>Vanilla JavaScript</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Firebase</li>
+                </ul>
             </section>
             <div id="triangle-3"></div>
             <section className="color-2">
-                <h3>Explore my projects.</h3>
+                <div id="color-2-content">
+                    <h3>Explore my projects.</h3>
+                    <p>Check out the live applications in my portfolio.</p>
+                    <Link to="/portfolio">My Portfolio</Link>
+                    <p>Check out my code on GitHub and CodePen:</p>
+                    <ul>
+                        <li><a href="https://github.com/helen-mckay" target="_blank" noopener noreferrer><img src={githubw} alt="GitHub"/></a></li>
+                        <li><a href="https://codepen.io/helen-mckay" target="_blank" noopener noreferrer><img src={codepenw} alt="CodePen"/></a></li>
+                    </ul>
+                </div>
             </section>
             <div id="triangle-4"></div>
             <section className="white-section">
                 <h3>I want to be on your team.</h3>
+                <p>I'm looking for full-time web development work in Houston, TX.</p> 
+                <p>I want to be part of team delivering solutions for businesses and users. Create applic</p>
+                <p>(Remote work is preferred due to the ongoing pandemic).</p>
             </section>
             <div id="triangle-5"></div>
             <section className="color-3">
