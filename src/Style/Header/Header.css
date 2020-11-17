@@ -6,7 +6,7 @@ header {
         "title media"
         "nav nav";
     align-items: center;
-    background-color: var(--white);
+    background-color: var(--offwhite);
 }
 
 header h1 {
@@ -80,7 +80,7 @@ nav ul li a {
 
 #resume-link {
     background-color: var(--accent-blue);
-    color: var(--white);
+    color: white;
     padding: 0.5rem;
     transition: filter ease 0.3s;
     border-bottom: none;

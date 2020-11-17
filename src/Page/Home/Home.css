@@ -13,7 +13,7 @@
     margin: auto;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
-    color: var(--white);
+    color: white;
 }
 
 #hero-content {
@@ -27,6 +27,7 @@
 #hero-content ul li {
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px black;
+    color: white;
 }
 
 #hero-buttons {
@@ -86,7 +87,8 @@ span {
 }
 
 .color-1, .color-2, .color-3 {
-    color: var(--white);
+    color: white;
+    font-size: 1.5rem;
 }
 
 .color-1 h3, .color-2 h3, .color-3 h3 {
@@ -101,6 +103,21 @@ span {
 
 .color-1 {
     background-color: var(--accent-orange);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.color-1 ul {
+    align-self: flex-end;
+    justify-self: flex-end;
+    list-style: none;
+    text-align: right;
+    margin: 1rem;
+}
+
+.color-1 ul li {
+    margin: 1rem;
+    font-size: 1.25rem;
 }
 
 .color-2 {

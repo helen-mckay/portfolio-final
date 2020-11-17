@@ -35,7 +35,7 @@ const Home = () => {
             <section className="color-1">
                 <h3>My design and development philosophy:</h3>
                 <ul>
-                    <li>Understand the project as a fusion of art and code</li>
+                    <li>Understand the project as a fusion of art and code.</li>
                     <li>Design it mobile-first, build it responsive.</li>
                     <li>Fun to build, fun to use.</li>
                 </ul>
@@ -43,6 +43,7 @@ const Home = () => {
             <div id="triangle-2"></div>
             <section className="white-section">
                 <h3>I make all kinds of things.</h3>
+                <p>I've got a special focus on single applications </p>
             </section>
             <div id="triangle-3"></div>
             <section className="color-2">
