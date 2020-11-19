@@ -92,7 +92,7 @@ const Home = () => {
             <div id="triangle-4"></div>
             <section className="white-section">
                 <h3>I want to be on your team.</h3>
-                <p>I'm looking for full-time web development work in Houston, TX. (Remote work preferred due to the ongong pandemic).</p> 
+                <p>I'm looking for full-time web development work in Houston, TX. (Remote work preferred due to the ongoing pandemic).</p> 
             </section>
             <div id="triangle-5"></div>
             <section className="color-3">

@@ -1,3 +1,5 @@
+// TO-DO: put content on this page
+
 import React from 'react';
 
 const Bio = () => {

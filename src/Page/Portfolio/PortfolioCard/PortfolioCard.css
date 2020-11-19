@@ -9,12 +9,18 @@
 
 .PortfolioCardImage {
     height: 200px;
+    background-color: var(--accent-orange);
+    display: flex;
+}
+
+.PortfolioCardImage p {
+    color: white;
+    margin: auto;
 }
 
 .PortfolioCardImage img {
     height: 100%;
     width: auto;
-    border: 2px solid var(--accent-orange);
 }
 
 .PortfolioCard-content {

@@ -8,7 +8,7 @@ import AdminCard from './AdminCard/AdminCard';
 const Admin = () => {
 
     const [snapshot, snapshot_loading, snapshot_error] = useCollection(
-        firebase.firestore().collection('projects')
+        firebase.firestore().collection('projects').orderBy("date", "desc")
     );
 
     const doSignOut = () => {
