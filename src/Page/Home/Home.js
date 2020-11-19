@@ -51,7 +51,7 @@ const Home = () => {
                         <li>Design it mobile-first, build it responsive.</li>
                         <li>
                             <ul>
-                                <li>Strong user experience begins with support for all users on all browsers on all devices. </li>
+                                <li>Strong user experience begins with a design that supports all users.</li>
                             </ul>
                         </li>
                         <li>Fun to build, fun to use.</li>

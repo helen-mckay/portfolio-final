@@ -1,10 +1,21 @@
-.PortfolioCard {
-    background-color: var(--offwhite);
+.PortfolioCard0, .PortfolioCard1, .PortfolioCard2 {
     display: flex;
     flex-flow: column nowrap;
-    margin: 0.5rem;
     padding: 1rem;
     justify-content: space-evenly;
+    margin: 0.5rem;
+}
+
+.PortfolioCard0 {
+    background-color: var(--accent-orange);
+}
+
+.PortfolioCard1 {
+    background-color: var(--accent-red);
+}
+
+.PortfolioCard2 {
+    background-color: var(--accent-blue);
 }
 
 .PortfolioCardImage {
@@ -24,11 +35,13 @@
 }
 
 .PortfolioCard-content {
-    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
+    flex: 1;
+    padding: 1rem;
 }
 
 .PortfolioCard-content h3 {

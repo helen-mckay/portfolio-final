@@ -1,1 +1,22 @@
 /* TO-DO: figure out how to display the portfolio cards in a satisfying manner */
+#Portfolio {
+    padding: 1rem;
+    background-color: var(--offwhite);
+}
+
+@media screen and (min-width: 800px)
+{
+    #Portfolio {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    #Portfolio {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
