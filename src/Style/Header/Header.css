@@ -36,16 +36,16 @@ header h1 {
 
 .mediaLink {
     border-radius: 50%;
+    transition: filter ease 0.3s;
 }
 
-.mediaLink img:hover {
+.mediaLink:hover {
     filter: brightness(70%);
 }
 
 .mediaLink img {
     height: 100%;
     width: 100%;
-    transition: filter ease 0.3s;
 }
 
 nav {

@@ -2,9 +2,11 @@
 
 import React from 'react';
 
+import './Bio.css';
+
 const Bio = () => {
     return(
-        <div>
+        <div id="Bio">
             <h2>This is the bio page</h2>
         </div>
     );
