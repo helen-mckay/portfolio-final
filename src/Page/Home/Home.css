@@ -82,8 +82,27 @@ span {
     padding-top: 4rem;
 }
 
+.white-section p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
 .white-section h3 {
     text-align: left;
+}
+
+.white-section h4 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+#white-2 ul li {
+    height: 50px;
+}
+
+#white-2 ul li img {
+    height: 100%;
 }
 
 .color-1, .color-2, .color-3 {
@@ -93,6 +112,15 @@ span {
 
 .color-1, .color-2, .color-3, .white-section {
     padding: 1rem;
+}
+
+.white-section ul {
+    list-style: none;
+    display: flex;
+}
+
+.white-section ul li {
+    margin: 1rem;
 }
 
 .color-1 h3, .color-2 h3, .color-3 h3 {
@@ -123,19 +151,18 @@ span {
 
 #color-1-content > ul li {
     margin: 1rem 0;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 #color-1-content ul li > ul li {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: normal;
     margin: 0;
 }
 
 .color-2 {
     background-color: var(--accent-red);
-
 }
 
 #color-2-content {
@@ -163,6 +190,7 @@ span {
 #color-2-content p {
     text-align: right;
     margin: 1rem 0;
+    font-size: 1.5rem;
 }
 
 #color-2-content ul {
@@ -195,9 +223,49 @@ span {
     border-radius: 50%;
 }
 
-
 .color-3 {
     background-color: var(--accent-blue);
+}
+
+#color-3-content {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem;
+}
+
+#color-3-content p {
+    text-align: right;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+#color-3-content ul {
+    display: flex;
+    list-style: none;
+    align-self: flex-end;
+}
+
+#color-3-content ul li {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+#color-3-content ul li a {
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+#color-3-content ul li a:hover {
+    filter: brightness(85%);
+}
+
+#color-3-content ul li a img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 600px)

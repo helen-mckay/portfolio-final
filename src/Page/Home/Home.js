@@ -3,6 +3,14 @@ import {Link} from 'react-router-dom';
 
 import githubw from '../../Style/Images/github-w.png';
 import codepenw from '../../Style/Images/codepen-w.png';
+import linkedinw from '../../Style/Images/linkedin-w.png';
+import emailw from '../../Style/Images/email-w.png';
+
+import reactlogo from '../../Style/Images/reactlogo.png';
+import javascriptlogo from '../../Style/Images/javascriptlogo.png';
+import html5logo from '../../Style/Images/html5logo.png';
+import css3logo from '../../Style/Images/css3logo.png';
+import firebaselogo from '../../Style/Images/firebaselogo.png';
 
 import './Home.css';
 
@@ -56,16 +64,16 @@ const Home = () => {
                 </div>
             </section>
             <div id="triangle-2"></div>
-            <section className="white-section">
+            <section className="white-section" id="white-2">
                 <h3>I make all kinds of things.</h3>
                 <p>But I've got a special focus on single-page web applications.</p>
-                <p>Top skills:</p>
+                <h4>Top Skills:</h4>
                 <ul>
-                    <li>React</li>
-                    <li>Vanilla JavaScript</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Firebase</li>
+                    <li><img src={reactlogo} alt="React"/></li>
+                    <li><img src={javascriptlogo} alt="JavaScript"/></li>
+                    <li><img src={html5logo} alt="HTML5"/></li>
+                    <li><img src={css3logo} alt="CSS3"/></li>
+                    <li><img src={firebaselogo} alt="Firebase"/></li>
                 </ul>
             </section>
             <div id="triangle-3"></div>
@@ -84,13 +92,18 @@ const Home = () => {
             <div id="triangle-4"></div>
             <section className="white-section">
                 <h3>I want to be on your team.</h3>
-                <p>I'm looking for full-time web development work in Houston, TX.</p> 
-                <p>I want to be part of team delivering solutions for businesses and users. Create applic</p>
-                <p>(Remote work is preferred due to the ongoing pandemic).</p>
+                <p>I'm looking for full-time web development work in Houston, TX. (Remote work preferred due to the ongong pandemic).</p> 
             </section>
             <div id="triangle-5"></div>
             <section className="color-3">
-                <h3>Let's get connected.</h3>
+                <div id="color-3-content">
+                    <h3>Let's get connected.</h3>
+                    <p>Connect with me on LinkedIn and/or send me an email:</p>
+                    <ul>
+                        <li><a href="https://linkedin.com" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
+                        <li><a href="mailto:helen.mckay@comcast.net" target="_blank" noopener noreferrer><img src={emailw} alt="Email"/></a></li>
+                    </ul>
+                </div>
             </section>
             <div id="triangle-6"></div>
         </div>

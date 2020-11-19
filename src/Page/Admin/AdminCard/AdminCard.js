@@ -180,7 +180,6 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
                     <label>toggle public/private</label>
                     <input type="checkbox" checked={publicToggle} onChange={handlePublicToggle}/>
                 </div>
-                
                 <p>Original image:</p>
                 {hasImage && <AdminCardImageFetcher doc_id={doc_id}/>}
                 <p>New image:</p>
@@ -190,7 +189,7 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
                 <div>
                     <label>Upload new image</label>
                     <input 
-                        accept=".jpg, .jpeg" 
+                        accept=".jpg, .jpeg, .png" 
                         type="file" 
                         onClick={e => (e.target.value = null)} 
                         onChange={e => handleUploadChange(e)}/>

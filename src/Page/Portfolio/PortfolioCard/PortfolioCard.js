@@ -4,24 +4,28 @@ import firebase from '../../../firebase';
 
 import { useDownloadURL } from 'react-firebase-hooks/storage';
 
+import githubw from '../../../Style/Images/github-w.png';
+import codepenw from '../../../Style/Images/codepen-w.png';
+import websitew from '../../../Style/Images/website-w.png';
+
 import './PortfolioCard.css';
 
-const HomeCardImageFetcher = (props) => {
+const PortfolioCardImageFetcher = (props) => {
     const [downloadURL, URL_loading, URL_error] = useDownloadURL(
         firebase.storage().ref(`projects/${props.doc_id}/${props.doc_id}.jpg`)
     );
 
     return(
-        <div className="homeCardImage">
+        <div className="PortfolioCardImage">
             {URL_loading ?
             <p>Loading image...</p>
             :<img src={downloadURL} alt=""/>
             }
         </div>
-    )
+    );
 } 
 
-const HomeCard = ({doc_id, data}) => {
+const PortfolioCard = ({doc_id, data}) => {
     const [hasImage, setHasImage] = useState(false);
 
     useEffect(() => {
@@ -40,22 +44,24 @@ const HomeCard = ({doc_id, data}) => {
     let techKeyCounter = 0;
 
     return(
-        <div className="homeCard">
-            {hasImage && <HomeCardImageFetcher doc_id={doc_id}/>}
-            <h3>{data.title}</h3>
-            <ul className="tech">
-                {data.tech.map((t, index) => (
-                    <li key={techKeyCounter++}>{t}</li>
-                ))}
-            </ul>
-            <ul className="links">
-                {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" noopener noreferrer>GitHub</a></li>}
-                {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" noopener noreferrer>CodePen</a></li>}
-                {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" noopener noreferrer>Live Site</a></li>}
-            </ul>
-            <p className="description">{data.description}</p>
+        <div className="PortfolioCard">
+            <div className="PortfolioCard-content">
+                {hasImage && <PortfolioCardImageFetcher doc_id={doc_id}/>}
+                <h3>{data.title}</h3>
+                <ul className="tech">
+                    {data.tech.map((t, index) => (
+                        <li key={techKeyCounter++}>{t}</li>
+                    ))}
+                </ul>
+                <ul className="links">
+                    {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" noopener noreferrer><img src={githubw}/><p>GitHub</p></a></li>}
+                    {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" noopener noreferrer><img src={codepenw}/><p>CodePen</p></a></li>}
+                    {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" noopener noreferrer><img src={websitew}/><p>Live Site</p></a></li>}
+                </ul>
+                <p className="description">{data.description}</p>
+            </div>
         </div>
     );
 }
 
-export default HomeCard;
+export default PortfolioCard;

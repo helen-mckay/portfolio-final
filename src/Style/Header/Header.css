@@ -1,6 +1,6 @@
 header {
     display: grid;
-    padding: 0.4rem;
+    padding: 0.5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "title media"
@@ -81,7 +81,7 @@ nav ul li a {
 #resume-link {
     background-color: var(--accent-blue);
     color: white;
-    padding: 0.5rem;
+    padding: 0.45rem;
     transition: filter ease 0.3s;
     border-bottom: none;
 }

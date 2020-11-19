@@ -5,6 +5,8 @@ import { useCollection } from 'react-firebase-hooks/firestore';
 
 import PortfolioCard from './PortfolioCard/PortfolioCard';
 
+import './Portfolio.css';
+
 const Portfolio = () => {
 
     const [snapshot, snapshot_loading, snapshot_error] = useCollection(
@@ -12,7 +14,7 @@ const Portfolio = () => {
     );
 
     return(
-        <div>
+        <div id="Portfolio">
             {snapshot_loading && <p>Loading...</p>}
             {snapshot && snapshot.docs.map((doc) => (
                 <PortfolioCard

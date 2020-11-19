@@ -1,0 +1,84 @@
+.PortfolioCard {
+    background-color: var(--offwhite);
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0.5rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.PortfolioCardImage {
+    height: 200px;
+}
+
+.PortfolioCardImage img {
+    height: 100%;
+    width: auto;
+    border: 2px solid var(--accent-orange);
+}
+
+.PortfolioCard-content {
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.PortfolioCard-content h3 {
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-transform: capitalize;
+    color: var(--accent-orange);
+    font-weight: bold;
+    text-align: center;
+}
+
+.PortfolioCard-content ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+.PortfolioCard-content .tech li {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: var(--accent-red);
+    font-weight: bold;
+}
+
+.PortfolioCard-content .links li {
+    margin: 1rem;
+}
+
+.PortfolioCard-content .links li a {
+    background-color: var(--accent-blue);
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    transition: filter ease 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PortfolioCard-content .links li a p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 0.75rem;
+}
+
+.PortfolioCard-content .links li a img {
+    height: 2rem;
+}
+
+.PortfolioCard-content .links li a:hover {
+    filter: brightness(85%);
+}
+
+.PortfolioCard-content > p {
+    margin: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
