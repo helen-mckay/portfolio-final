@@ -8,3 +8,12 @@
     height: 100%;
     width: auto;
 }
+
+.AdminCard {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}

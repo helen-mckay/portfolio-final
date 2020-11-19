@@ -5,6 +5,8 @@ import { useCollection } from 'react-firebase-hooks/firestore';
 
 import AdminCard from './AdminCard/AdminCard';
 
+import './Admin.css';
+
 const Admin = () => {
 
     const [snapshot, snapshot_loading, snapshot_error] = useCollection(
@@ -39,20 +41,24 @@ const Admin = () => {
     }
 
     return(
-        <div>
-            <h2>This is the admin page</h2>
-            {snapshot_error && console.log("something wrong on the adminpage" + snapshot_error)}
-            <button onClick={doSignOut}>log out</button>
-            {snapshot && snapshot.docs.map((doc) => (
-                <AdminCard
-                    key={doc.id}
-                    doc_id={doc.id}
-                    data={doc.data()}
-                    updateCard={updateCard}
-                    deleteCard={deleteCard}
-                />
-            ))}
-            <button onClick={addNewCard}>Add New Card</button>
+        <div id="Admin">
+            <div id="Admin-buttons">
+                <h2>Admin</h2>
+                <button onClick={addNewCard}>Add New Card</button>
+                <button onClick={doSignOut}>log out</button>
+                {snapshot_error && console.log("something wrong on the adminpage" + snapshot_error)}
+            </div>
+            <div id="Admin-cards">
+                {snapshot && snapshot.docs.map((doc) => (
+                    <AdminCard
+                        key={doc.id}
+                        doc_id={doc.id}
+                        data={doc.data()}
+                        updateCard={updateCard}
+                        deleteCard={deleteCard}
+                    />
+                ))}
+            </div>           
         </div>
     );
 }

@@ -173,7 +173,7 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
     let techKeyCount = 0;
 
     return(
-        <div className="adminCard">
+        <div className="AdminCard">
             {publicToggle ? <p>This card is public</p> : <p>This card is private</p>}
             <form onSubmit={e => handleSubmit(e)}>
                 <div>
