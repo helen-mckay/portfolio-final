@@ -2,3 +2,41 @@
     padding: 1rem;
     background-color: var(--offwhite);
 }
+
+#Bio-hero {
+    height: 500px;
+    background-image: url('../../Style/Images/happywoman.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#Bio h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#Bio p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 1rem;
+}
+
+#Bio em {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+#Bio a {
+    font-size: 1.25rem;
+    color: var(--accent-blue);
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+@media screen and (min-width: 600px)
+{
+    #Bio {
+        padding: 1rem 10rem;
+    }
+}
