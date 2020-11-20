@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 import githubw from '../../Style/Images/github-w.png';
@@ -15,11 +15,6 @@ import firebaselogo from '../../Style/Images/firebaselogo.png';
 import './Home.css';
 
 const Home = () => {
-
-    useEffect(() => {
-        document.title = "Helen McKay"
-    }, [document.title]);
-
     return(
         <div id="Home">
             <div id="hero">

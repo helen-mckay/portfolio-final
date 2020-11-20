@@ -1,14 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './Bio.css';
 
 const Bio = () => {
-
-    useEffect(() => {
-        document.title = "Helen McKay | Bio"
-    }, [document.title]);
-
     return(
         <div id="Bio">
             <div id="Bio-hero"></div>

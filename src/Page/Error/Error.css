@@ -1,0 +1,17 @@
+#Error {
+    padding: 5rem;
+}
+
+#Error h2 {
+    font-size: 2rem;
+    margin: auto;
+    flex: 1;
+}
+
+#error-link {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: auto;
+    flex: 1;
+}

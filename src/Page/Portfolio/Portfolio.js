@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import firebase from '../../firebase';
 
 import { useCollection } from 'react-firebase-hooks/firestore';
@@ -8,11 +8,6 @@ import PortfolioCard from './PortfolioCard/PortfolioCard';
 import './Portfolio.css';
 
 const Portfolio = () => {
-
-    useEffect(() => {
-        document.title = "Helen McKay | Portfolio"
-    }, [document.title]);
-
     const [snapshot, snapshot_loading, snapshot_error] = useCollection(
         firebase.firestore().collection('projects').where("publicToggle", "==", true)
     );

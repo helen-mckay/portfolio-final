@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import firebase from './firebase';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 import ProtectedRoute from './Tool/ProtectedRoute';
@@ -8,10 +8,8 @@ import ErrorBoundary from './Tool/ErrorBoundary';
 
 import Header from './Style/Header/Header';
 import Bio from './Page/Bio/Bio';
-// import Portfolio from './Page/Portfolio/Portfolio';
-// import SignIn from './Page/SignIn/SignIn';
-// import Admin from './Page/Admin/Admin';
 import Home from './Page/Home/Home';
+import Error from './Page/Error/Error';
 import './App.css';
 
 const Portfolio = React.lazy(() => import('./Page/Portfolio/Portfolio'));
@@ -19,11 +17,39 @@ const SignIn = React.lazy(() => import('./Page/SignIn/SignIn'));
 const Admin = React.lazy(() => import('./Page/Admin/Admin'));
 
 
-
 const App = () => {
   const [user, user_loading, user_error] = useAuthState(
     firebase.auth()
   );
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/")
+    {
+      document.title = "Helen McKay";
+    }
+    else if (location.pathname === "/portfolio")
+    {
+      document.title = "Helen McKay | Portfolio";
+    }
+    else if (location.pathname === "/bio")
+    {
+      document.title = "Helen McKay | Bio";
+    }
+    else if (location.pathname === "/signin")
+    {
+      document.title = "Helen McKay | Sign In";
+    }
+    else if (location.pathname === "/admin")
+    {
+      document.title = "Helen McKay | Admin";
+    }
+    else
+    {
+      document.title = "Error";
+    }
+  }, [location])
 
   return (
     <div className="App">
@@ -50,6 +76,9 @@ const App = () => {
                 }
               </Route>
               <ProtectedRoute exact path="/admin" component={Admin}/>
+              <Route>
+                <Error/>
+              </Route>
             </Switch>
           </Suspense>
         </ErrorBoundary>
