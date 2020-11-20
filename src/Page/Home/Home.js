@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 
 import githubw from '../../Style/Images/github-w.png';
@@ -15,6 +15,11 @@ import firebaselogo from '../../Style/Images/firebaselogo.png';
 import './Home.css';
 
 const Home = () => {
+
+    useEffect(() => {
+        document.title = "Helen McKay"
+    }, [document.title]);
+
     return(
         <div id="Home">
             <div id="hero">
@@ -100,7 +105,7 @@ const Home = () => {
                     <h3>Let's get connected.</h3>
                     <p>Connect with me on LinkedIn and/or send me an email:</p>
                     <ul>
-                        <li><a href="https://linkedin.com" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
+                        <li><a href="https://linkedin.com/helen-mckay-htx" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
                         <li><a href="mailto:helen.mckay@comcast.net" target="_blank" noopener noreferrer><img src={emailw} alt="Email"/></a></li>
                     </ul>
                 </div>

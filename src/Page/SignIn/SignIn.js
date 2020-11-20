@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import firebase from '../../firebase';
 
@@ -6,6 +6,10 @@ const SignIn = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
+
+    useEffect(() => {
+        document.title = "Helen McKay | Sign In"
+    }, [document.title]);
     
     const handleSubmit = (e) => {
         e.preventDefault();

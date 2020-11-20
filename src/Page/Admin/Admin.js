@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import firebase from '../../firebase';
 import { useCollection } from 'react-firebase-hooks/firestore';
@@ -39,6 +39,10 @@ const Admin = () => {
             console.log(error);
         });
     }
+
+    useEffect(() => {
+        document.title = "Helen McKay | Admin"
+    }, [document.title]);
 
     return(
         <div id="Admin">
