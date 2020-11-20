@@ -10,7 +10,7 @@ import './Header.css';
 
 const MediaLink = (props) => {
     return(
-        <a href={props.link} className="mediaLink">
+        <a href={props.link} className="mediaLink" target="_blank" noopener noreferrer>
             <img src={props.image}/>
         </a>
     );
@@ -23,7 +23,7 @@ const Header = () => {
             <ul id="media">
                 <li><MediaLink image={github} link="https://github.com/helen-mckay"/></li>
                 <li><MediaLink image={codepen} link="https://codepen.io/helen-mckay"/></li>
-                <li><MediaLink image={linkedin} link=""/></li>
+                <li><MediaLink image={linkedin} link="https://linkedin.com/in/helen-mckay-htx"/></li>
                 <li><MediaLink image={email} link="mailto:helen.mckay@comcast.net"/></li>
             </ul>
             <nav>

@@ -36,6 +36,10 @@
 
 @media screen and (min-width: 600px)
 {
+    #Bio-hero {
+        height: 800px;
+    }
+
     #Bio {
         padding: 1rem 10rem;
     }
