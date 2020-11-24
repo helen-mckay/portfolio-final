@@ -1,8 +1,5 @@
 .PortfolioCard0, .PortfolioCard1, .PortfolioCard2 {
-    display: flex;
-    flex-flow: column nowrap;
     padding: 0.25rem;
-    justify-content: space-evenly;
     margin: 0.5rem;
 }
 
@@ -39,7 +36,6 @@
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    flex: 1;
     padding: 1rem;
 }
 
