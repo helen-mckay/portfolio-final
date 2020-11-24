@@ -4,10 +4,18 @@
 }
 
 #Bio-hero {
-    height: 500px;
-    background-image: url('../../Style/Images/happywoman.jpg');
+    height: 300px;
+    background-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), url('../../Style/Images/website photo 2.jpg');
     background-size: cover;
     background-position: center center;
+    display: flex;
+}
+
+#Bio-hero h2 {
+    color: white;
+    font-size: 4rem;
+    margin: auto;
+    text-shadow: 2px 2px 2px black;
 }
 
 #Bio h3 {
@@ -40,6 +48,13 @@
         height: 800px;
     }
 
+    #Bio {
+        padding: 1rem 5rem;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
     #Bio {
         padding: 1rem 10rem;
     }

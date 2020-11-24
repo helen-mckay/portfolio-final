@@ -100,7 +100,7 @@ const Home = () => {
                     <h3>Let's get connected.</h3>
                     <p>Connect with me on LinkedIn and/or send me an email:</p>
                     <ul>
-                        <li><a href="https://linkedin.com/helen-mckay-htx" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
+                        <li><a href="https://linkedin.com/in/helen-mckay-htx" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
                         <li><a href="mailto:helen.mckay@comcast.net" target="_blank" noopener noreferrer><img src={emailw} alt="Email"/></a></li>
                     </ul>
                 </div>

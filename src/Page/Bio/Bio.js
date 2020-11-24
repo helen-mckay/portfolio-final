@@ -6,7 +6,9 @@ import './Bio.css';
 const Bio = () => {
     return(
         <div id="Bio">
-            <div id="Bio-hero"></div>
+            <div id="Bio-hero">
+                <h2>My Story</h2>
+            </div>
             <h3>How I got Started:</h3>
             <p>When I was 13 years old, I started hacking and editing Tumblr themes because I was never satisfied with  the styling. I was soon addicted to hunting down new themes to explore how their code worked and make little tweaks to suit my style needs.</p> 
             <p>Not long after, I developed a deep passion for webcomics. How incredible it is to build a story, business, and community, all on one website! As my reading list grew from a handful of webcomics to several dozen, I started noting how varied and unique each website was for each comic—from styling to features, I noted what I felt worked and what didn’t. Soon, I had a dream. I wanted to be like my favorite webcomic artists, some day. But I wanted to go one step further: I wanted to build the website <em>myself.</em></p>
