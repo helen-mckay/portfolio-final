@@ -8,6 +8,8 @@ import email from '../Images/email.png';
 
 import './Header.css';
 
+import resume from '../../HelenMcKay_Resume.pdf';
+
 const MediaLink = (props) => {
     return(
         <a href={props.link} className="mediaLink" target="_blank" noopener noreferrer>
@@ -24,14 +26,14 @@ const Header = () => {
                 <li><MediaLink image={github} link="https://github.com/helen-mckay"/></li>
                 <li><MediaLink image={codepen} link="https://codepen.io/helen-mckay"/></li>
                 <li><MediaLink image={linkedin} link="https://linkedin.com/in/helen-mckay-htx"/></li>
-                <li><MediaLink image={email} link="mailto:helen.mckay@comcast.net"/></li>
+                <li><MediaLink image={email} link="mailto:helen@helenmckay.dev"/></li>
             </ul>
             <nav>
                 <ul>
                     <li><NavLink to="/" exact activeClassName="activeNavLink">Home</NavLink></li>
                     <li><NavLink to="/portfolio" exact activeClassName="activeNavLink">Portfolio</NavLink></li>
                     <li><NavLink to="/bio" exact activeClassName="activeNavLink">About Me</NavLink></li>
-                    <li><a href="" id="resume-link">Resume</a></li>
+                    <li><a href={resume} id="resume-link" target="_blank" noopener noreferrer>Resume</a></li>
                 </ul>
             </nav>
         </header>

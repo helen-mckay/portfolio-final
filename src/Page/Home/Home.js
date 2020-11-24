@@ -14,6 +14,8 @@ import firebaselogo from '../../Style/Images/firebaselogo.png';
 
 import './Home.css';
 
+import resume from '../../HelenMcKay_Resume.pdf';
+
 const Home = () => {
     return(
         <div id="Home">
@@ -29,7 +31,7 @@ const Home = () => {
                     <div id="hero-buttons">
                         <Link to="/portfolio" className="hero-button" id="work-link">My Work</Link>
                         <Link to="/bio" className="hero-button" id="story-link">My Story</Link>
-                        <Link to="" className="hero-button" id="hero-resume-link">My Resume</Link>
+                        <Link to={resume} target="_blank" noopener noreferrer className="hero-button" id="hero-resume-link">My Resume</Link>
                     </div>
                 </div>
             </div>

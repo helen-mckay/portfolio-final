@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 
 import './Bio.css';
 
+import resume from '../../HelenMcKay_Resume.pdf';
+
 const Bio = () => {
     return(
         <div id="Bio">
@@ -22,7 +24,7 @@ const Bio = () => {
             <h3>What I'm looking for:</h3>
             <p>I want to work together with a team, making web applications that help businesses succeed.</p>
             <p>I’m looking for full-time development work in Houston, TX. (Remote work is preferred due to the ongoing pandemic).</p>
-            <p>Please feel free to download <a href="">my resume</a> and explore my projects on my <Link to="/portfolio">portfolio</Link>, <a href="https://github.com/helen-mckay" target="_blank" noopener noreferrer>Github</a> repositories, and <a href="https://codepen.io/helen-mckay" target="_blank" noopener noreferrer>CodePens</a>. I also invite you to connect with me on <a href="https://linkedin.com/helen-mckay-htx">LinkedIn</a> or send me an <a href="mailto:helen.mckay@comcast.net">email</a>.</p>
+            <p>Please feel free to download <a href={resume} target="_blank" noopener noreferrer>my resume</a> and explore my projects on my <Link to="/portfolio">portfolio</Link>, <a href="https://github.com/helen-mckay" target="_blank" noopener noreferrer>Github</a> repositories, and <a href="https://codepen.io/helen-mckay" target="_blank" noopener noreferrer>CodePens</a>. I also invite you to connect with me on <a href="https://linkedin.com/helen-mckay-htx">LinkedIn</a> or send me an <a href="mailto:helen.mckay@comcast.net">email</a>.</p>
             <h3>Other things I do:</h3>
             <p>When I’m not working on websites, I can be found baking homemade bread, crocheting, creating digital art, and watching hilariously terrible movies with my friends over Discord (every Thursday at 7 p.m.&mdash;I call it Trash Movie Thursdays. I'm very proud of it).</p>
         </div>
