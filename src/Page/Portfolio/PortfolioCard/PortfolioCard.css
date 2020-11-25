@@ -46,6 +46,7 @@
 
 .PortfolioCardImage img {
     width: 300px;
+    height: auto;
 }
 
 .PortfolioCard-content {
