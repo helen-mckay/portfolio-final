@@ -59,6 +59,10 @@
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
     list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    justify-content: center;
 }
 
 .PortfolioCard-content .tech li {
