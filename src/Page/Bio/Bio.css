@@ -5,7 +5,6 @@
 #Bio-hero {
     height: 200px;
     display: flex;
-    background-color: white;
 }
 
 #Bio-hero h2 {
@@ -54,13 +53,13 @@
     }
 
     #Bio {
-        padding: 1rem 5rem;
+        padding: 1rem;
     }
 }
 
 @media screen and (min-width: 800px)
 {
     #Bio {
-        padding: 1rem 10rem;
+        padding: 1rem 5rem;
     }
 }

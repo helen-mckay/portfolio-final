@@ -22,7 +22,7 @@ header h1 {
 #media {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     list-style: none;
     width: 100%;
     grid-area: media;
@@ -93,6 +93,10 @@ nav ul li a {
     filter: brightness(85%);
 }
 
+#resume-link-li {
+    display: none;
+}
+
 @media screen and (min-width: 600px)
 {
     nav {
@@ -129,7 +133,7 @@ nav ul li a {
         margin: 0 0.5rem;
     }
 
-    #resume-link {
+    #resume-link, #resume-link-li {
         display: inherit;
     }
 }
