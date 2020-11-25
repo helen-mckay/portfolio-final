@@ -48,8 +48,8 @@ const PortfolioCard = ({doc_id, data}) => {
 
     return(
         <div className={"PortfolioCard" + randomColor}>
+            {hasImage && <PortfolioCardImageFetcher doc_id={doc_id}/>}
             <div className="PortfolioCard-content">
-                {hasImage && <PortfolioCardImageFetcher doc_id={doc_id}/>}
                 <h2>{data.title}</h2>
                 <ul className="tech">
                     {data.tech.map((t, index) => (

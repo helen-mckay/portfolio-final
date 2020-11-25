@@ -1,6 +1,8 @@
 .PortfolioCard0, .PortfolioCard1, .PortfolioCard2 {
     padding: 0.25rem;
     margin: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .PortfolioCard0 {
@@ -17,8 +19,9 @@
 
 .PortfolioCardImage {
     width: 300px;
-    height: auto;
     display: flex;
+    align-self: center;
+    justify-self: center;
 }
 
 .PortfolioCardImage p {
@@ -28,8 +31,6 @@
 
 .PortfolioCardImage img {
     width: 300px;
-    height: auto;
-    margin: auto;
 }
 
 .PortfolioCard-content {
