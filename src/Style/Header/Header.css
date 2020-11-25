@@ -121,6 +121,10 @@ nav ul li a {
         font-size: 3.5rem;
     }
 
+    #media {
+        flex-flow: row nowrap;
+    }
+
     #media li {
         margin: 0 0.5rem;
     }
