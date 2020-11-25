@@ -85,6 +85,7 @@ nav ul li a {
     padding: 0.45rem;
     transition: filter ease 0.3s;
     border-bottom: none;
+    display: none;
 }
 
 #resume-link:hover {
@@ -121,6 +122,10 @@ nav ul li a {
 
     #media li {
         margin: 0 0.5rem;
+    }
+
+    #resume-link {
+        display: inherit;
     }
 }
 
