@@ -50,7 +50,7 @@ const PortfolioCard = ({doc_id, data}) => {
         <div className={"PortfolioCard" + randomColor}>
             <div className="PortfolioCard-content">
                 {hasImage && <PortfolioCardImageFetcher doc_id={doc_id}/>}
-                <h3>{data.title}</h3>
+                <h2>{data.title}</h2>
                 <ul className="tech">
                     {data.tech.map((t, index) => (
                         <li key={techKeyCounter++}>{t}</li>
