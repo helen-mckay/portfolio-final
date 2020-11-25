@@ -187,9 +187,9 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
                     {newImage && <img src={URL.createObjectURL(newImage)} alt=""/>}
                 </div>
                 <div>
-                    <label>Upload new image</label>
+                    <label>Upload new .jpg / .jpeg image</label>
                     <input 
-                        accept=".jpg, .jpeg, .png" 
+                        accept=".jpg, .jpeg" 
                         type="file" 
                         onClick={e => (e.target.value = null)} 
                         onChange={e => handleUploadChange(e)}/>
