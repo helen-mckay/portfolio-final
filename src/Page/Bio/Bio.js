@@ -18,8 +18,8 @@ const Bio = () => {
             <p>I don’t read many webcomics, these days, but I’ve never lost my fascination for them.  And I’ve never forgotten what I’ve learned from them, either: how to design a website that simultaneously supports a story, brand, business, and community.</p>
             <h3>Where I am now:</h3>
             <p>I attended UT Dallas from fall 2017 to fall 2019. I majored in Software Engineering and minored in Visual Arts. I wanted to be trained as both designer and developer so I could become the best web develper I could be.</p> 
-            <p>Health issues, a hospitalization, family needs, and the COVID-19 pandemic led to an interruption of my education. I’ve spent 2020 focused on my recovery and helping my family.</p>
-            <p>Then, I had another web development-related epiphany: nothing’s stopping me from making websites!</p>
+            <p>In fall 2019, life events interrupted my education&mdash;which was then further interrupted by the COVID-19 pandemic.</p>
+            <p>Then, once things finally settled down some, I had another web development-related epiphany: nothing’s stopping me from making websites!</p>
             <p>So, I’m back to making websites&mdash;and now I’m backed by my training as software engineer and visual artist.</p>
             <h3>What I'm looking for:</h3>
             <p>I want to work together with a team, making web applications that help businesses succeed.</p>

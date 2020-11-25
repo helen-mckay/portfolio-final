@@ -1,7 +1,7 @@
 #hero {
-    background-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), url('../../Style/Images/website photo 1-min.jpg');
+    background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 1 desktop-min.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center left;
     height: 600px;
     color: var(--white);
     display: flex;
@@ -273,6 +273,11 @@ span {
 
 @media screen and (min-width: 600px)
 {
+    #hero {
+        height: 800px;
+        background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 1 desktop-min.jpg');
+        background-position: center left;
+    }
     #hero-content {
         justify-content: flex-start;
     }
@@ -326,5 +331,12 @@ span {
 
     #color-1-content {
         grid-area: content;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    #hero {
+        height: 1000px;
     }
 }
