@@ -26,7 +26,7 @@ const Header = () => {
                 <li><MediaLink name="GitHub" image={githubsmall} link="https://github.com/helen-mckay"/></li>
                 <li><MediaLink name="CodePen" image={codepensmall} link="https://codepen.io/helen-mckay"/></li>
                 <li><MediaLink name="LinkedIn" image={linkedinsmall} link="https://linkedin.com/in/helen-mckay-htx"/></li>
-                <li><MediaLink name="Email" image={emailsmall} link="mailto:helen@helenmckay.dev"/></li>
+                <li id="email-media-li"><a className="mediaLink" id="email-media" href="mailto:helen@helenmckay.dev"><img src={emailsmall} alt="Email"/></a></li>
             </ul>
             <nav>
                 <ul>

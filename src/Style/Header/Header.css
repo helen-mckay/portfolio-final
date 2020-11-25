@@ -62,6 +62,10 @@ header h1 {
     margin: 0.25rem;
 }
 
+#email-media-li, #email-media {
+    display: none;
+}
+
 .mediaLink {
     border-radius: 50%;
     -webkit-transition: -webkit-filter ease 0.3s;
@@ -154,6 +158,11 @@ nav ul li a {
 
 @media screen and (min-width: 600px)
 {
+
+    #email-media-li, #email-media {
+        display: inherit;
+    }
+
     nav {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
