@@ -1,12 +1,10 @@
 #hero {
-    background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 1 desktop-min.jpg');
-    background-size: cover;
-    background-position: center center;
-    height: 600px;
-    color: var(--white);
+    height: 400px;
+    color: var(--gray);
     display: flex;
     flex-flow: column nowrap;
     padding: 0.25rem;
+    background-color: white;
 }
 
 /* okay, so the current image works well on mobile but looks bad on desktop: serve a different version of image for larger breakpoints */
@@ -15,8 +13,6 @@
     font-size: 4rem;
     margin: auto;
     font-weight: bold;
-    color: white;
-    text-shadow: 2px 2px 2px black;
 }
 
 #hero-content {
@@ -29,8 +25,6 @@
 
 #hero-content ul li {
     font-size: 2.5rem;
-    color: white;
-    text-shadow: 2px 2px 2px black;
 }
 
 #hero-buttons {
@@ -48,7 +42,6 @@
     color: white;
     text-decoration: none;
     transition: filter ease 0.3s;
-    box-shadow: 2px 2px 2px black;
     font-weight: bold;
 }
 
@@ -119,6 +112,7 @@ span {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .white-section ul li {
@@ -276,10 +270,20 @@ span {
     #hero {
         height: 800px;
         background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 1 desktop-min.jpg');
-        background-position: center left;
+        background-position: center center;
+        background-size: cover;
     }
     #hero-content {
         justify-content: flex-start;
+        color: white;
+    }
+
+    #hero-content h2, #hero-content ul li {
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .hero-button {
+        box-shadow: 2px 2px 2px black;
     }
 
     #white-1 {
