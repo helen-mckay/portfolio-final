@@ -13,7 +13,7 @@ import './PortfolioCard.css';
 // concept: make the background-color decided randomly!
 
 const PortfolioCardImageFetcher = (props) => {
-    const [downloadURL, URL_loading, URL_error] = useDownloadURL(
+    const [downloadURL, URL_loading, ,] = useDownloadURL(
         firebase.storage().ref(`projects/${props.doc_id}/${props.doc_id}.jpg`)
     );
 
@@ -29,7 +29,7 @@ const PortfolioCardImageFetcher = (props) => {
 
 const PortfolioCard = ({doc_id, data}) => {
     const [hasImage, setHasImage] = useState(false);
-    const [randomColor, setRandomColor] = useState(Math.floor(Math.random() * 3));
+    const [randomColor, ,] = useState(Math.floor(Math.random() * 3));
 
     useEffect(() => {
         async function checkForImage(){

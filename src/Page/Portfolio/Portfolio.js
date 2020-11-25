@@ -8,7 +8,7 @@ import PortfolioCard from './PortfolioCard/PortfolioCard';
 import './Portfolio.css';
 
 const Portfolio = () => {
-    const [snapshot, snapshot_loading, snapshot_error] = useCollection(
+    const [snapshot, snapshot_loading, ,] = useCollection(
         firebase.firestore().collection('projects').where("publicToggle", "==", true)
     );
 

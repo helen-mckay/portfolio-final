@@ -18,7 +18,7 @@ const Admin = React.lazy(() => import('./Page/Admin/Admin'));
 
 
 const App = () => {
-  const [user, user_loading, user_error] = useAuthState(
+  const [user] = useAuthState(
     firebase.auth()
   );
 

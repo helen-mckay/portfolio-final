@@ -14,7 +14,7 @@ import './AdminCard.css';
         //deleteCard=deleteCard(id)
 
 const AdminCardImageFetcher = (props) => {
-    const [downloadURL, URL_loading, URL_error] = useDownloadURL(
+    const [downloadURL, URL_loading, ,] = useDownloadURL(
         firebase.storage().ref(`projects/${props.doc_id}/${props.doc_id}.jpg`)
     );
 

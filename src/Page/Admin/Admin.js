@@ -9,7 +9,7 @@ import './Admin.css';
 
 const Admin = () => {
 
-    const [snapshot, snapshot_loading, snapshot_error] = useCollection(
+    const [snapshot, , snapshot_error] = useCollection(
         firebase.firestore().collection('projects').orderBy("date", "desc")
     );
 

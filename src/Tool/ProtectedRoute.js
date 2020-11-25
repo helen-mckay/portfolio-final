@@ -7,7 +7,7 @@ import Error from '../Page/Error/Error';
 
 const ProtectedRoute = ({ component: Component, ...rest }) => 
 {
-  const [user, user_loading, user_error] = useAuthState(firebase.auth());
+  const [user, , ,] = useAuthState(firebase.auth());
 
   return (
     <Route {...rest} render={
