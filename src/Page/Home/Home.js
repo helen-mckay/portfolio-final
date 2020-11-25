@@ -31,7 +31,7 @@ const Home = () => {
                     <div id="hero-buttons">
                         <Link to="/portfolio" className="hero-button" id="work-link">My Work</Link>
                         <Link to="/bio" className="hero-button" id="story-link">My Story</Link>
-                        <Link to={resume} target="_blank" noopener noreferrer className="hero-button" id="hero-resume-link">My Resume</Link>
+                        <Link to={resume} target="_blank" rel="noopener noreferrer" className="hero-button" id="hero-resume-link">My Resume</Link>
                     </div>
                 </div>
             </div>
@@ -86,8 +86,8 @@ const Home = () => {
                     <Link to="/portfolio">My Portfolio</Link>
                     <p>Check out my code on GitHub and CodePen:</p>
                     <ul>
-                        <li><a href="https://github.com/helen-mckay" target="_blank" noopener noreferrer><img src={githubw} alt="GitHub"/></a></li>
-                        <li><a href="https://codepen.io/helen-mckay" target="_blank" noopener noreferrer><img src={codepenw} alt="CodePen"/></a></li>
+                        <li><a href="https://github.com/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={githubw} alt="GitHub"/></a></li>
+                        <li><a href="https://codepen.io/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={codepenw} alt="CodePen"/></a></li>
                     </ul>
                 </div>
             </section>
@@ -102,8 +102,8 @@ const Home = () => {
                     <h3>Let's get connected.</h3>
                     <p>Connect with me on LinkedIn and/or send me an email:</p>
                     <ul>
-                        <li><a href="https://linkedin.com/in/helen-mckay-htx" target="_blank" noopener noreferrer><img src={linkedinw} alt="LinkedIn"/></a></li>
-                        <li><a href="mailto:helen.mckay@comcast.net" target="_blank" noopener noreferrer><img src={emailw} alt="Email"/></a></li>
+                        <li><a href="https://linkedin.com/in/helen-mckay-htx" target="_blank" rel="noopener noreferrer"><img src={linkedinw} alt="LinkedIn"/></a></li>
+                        <li><a href="mailto:helen.mckay@comcast.net" target="_blank" rel="noopener noreferrer"><img src={emailw} alt="Email"/></a></li>
                     </ul>
                 </div>
             </section>

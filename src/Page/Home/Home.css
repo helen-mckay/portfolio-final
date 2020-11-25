@@ -6,6 +6,7 @@
     color: var(--white);
     display: flex;
     flex-flow: column nowrap;
+    padding: 0.25rem;
 }
 
 #hero-content h2 {

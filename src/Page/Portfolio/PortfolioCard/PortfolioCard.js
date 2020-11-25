@@ -57,9 +57,9 @@ const PortfolioCard = ({doc_id, data}) => {
                     ))}
                 </ul>
                 <ul className="links">
-                    {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" noopener noreferrer><img src={githubw}/><p>GitHub</p></a></li>}
-                    {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" noopener noreferrer><img src={codepenw}/><p>CodePen</p></a></li>}
-                    {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" noopener noreferrer><img src={websitew}/><p>Live Site</p></a></li>}
+                    {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" rel="noopener noreferrer"><img src={githubw} alt="GitHub"/><p>GitHub</p></a></li>}
+                    {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" rel="noopener noreferrer"><img src={codepenw} alt="CodePen"/><p>CodePen</p></a></li>}
+                    {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" rel="noopener noreferrer"><img src={websitew} alt="Live Site"/><p>Live Site</p></a></li>}
                 </ul>
                 <p className="description">{data.description}</p>
             </div>
