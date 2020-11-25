@@ -7,15 +7,14 @@ import ProtectedRoute from './Tool/ProtectedRoute';
 import ErrorBoundary from './Tool/ErrorBoundary';
 
 import Header from './Style/Header/Header';
-import Bio from './Page/Bio/Bio';
-import Home from './Page/Home/Home';
-import Error from './Page/Error/Error';
 import './App.css';
 
 const Portfolio = React.lazy(() => import('./Page/Portfolio/Portfolio'));
 const SignIn = React.lazy(() => import('./Page/SignIn/SignIn'));
 const Admin = React.lazy(() => import('./Page/Admin/Admin'));
-
+const Bio = React.lazy(() => import('./Page/Bio/Bio'));
+const Home = React.lazy(() => import('./Page/Home/Home'));
+const Error = React.lazy(() => import('./Page/Error/Error'));
 
 const App = () => {
   const [user] = useAuthState(

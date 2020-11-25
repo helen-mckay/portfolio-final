@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
-import github from '../Images/github.png';
-import codepen from '../Images/codepen.png';
-import linkedin from '../Images/linkedin.png';
-import email from '../Images/email.png';
+import githubsmall from '../Images/github-small.png';
+import codepensmall from '../Images/codepen-small.png';
+import linkedinsmall from '../Images/linkedin-small.png';
+import emailsmall from '../Images/email-small.png';
 
 import './Header.css';
 
@@ -23,10 +23,10 @@ const Header = () => {
         <header>
             <h1>Helen McKay</h1>
             <ul id="media">
-                <li><MediaLink name="GitHub" image={github} link="https://github.com/helen-mckay"/></li>
-                <li><MediaLink name="CodePen" image={codepen} link="https://codepen.io/helen-mckay"/></li>
-                <li><MediaLink name="LinkedIn" image={linkedin} link="https://linkedin.com/in/helen-mckay-htx"/></li>
-                <li><MediaLink name="Email" image={email} link="mailto:helen@helenmckay.dev"/></li>
+                <li><MediaLink name="GitHub" image={githubsmall} link="https://github.com/helen-mckay"/></li>
+                <li><MediaLink name="CodePen" image={codepensmall} link="https://codepen.io/helen-mckay"/></li>
+                <li><MediaLink name="LinkedIn" image={linkedinsmall} link="https://linkedin.com/in/helen-mckay-htx"/></li>
+                <li><MediaLink name="Email" image={emailsmall} link="mailto:helen@helenmckay.dev"/></li>
             </ul>
             <nav>
                 <ul>

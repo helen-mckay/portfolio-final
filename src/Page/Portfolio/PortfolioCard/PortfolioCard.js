@@ -4,9 +4,9 @@ import firebase from '../../../firebase';
 
 import { useDownloadURL } from 'react-firebase-hooks/storage';
 
-import githubw from '../../../Style/Images/github-w.png';
-import codepenw from '../../../Style/Images/codepen-w.png';
-import websitew from '../../../Style/Images/website-w.png';
+import githubwsmall from '../../../Style/Images/github-w-small.png';
+import codepenwsmall from '../../../Style/Images/codepen-w-small.png';
+import websitewsmall from '../../../Style/Images/website-w-small.png';
 
 import './PortfolioCard.css';
 
@@ -57,9 +57,9 @@ const PortfolioCard = ({doc_id, data}) => {
                     ))}
                 </ul>
                 <ul className="links">
-                    {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" rel="noopener noreferrer"><img src={githubw} alt="GitHub"/><p>GitHub</p></a></li>}
-                    {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" rel="noopener noreferrer"><img src={codepenw} alt="CodePen"/><p>CodePen</p></a></li>}
-                    {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" rel="noopener noreferrer"><img src={websitew} alt="Live Site"/><p>Live Site</p></a></li>}
+                    {(data.github !== "") && <li><a className="site-link" href={data.github} target="_blank" rel="noopener noreferrer"><img src={githubwsmall} alt="GitHub"/><p>GitHub</p></a></li>}
+                    {(data.codepen !== "") && <li><a className="site-link" href={data.codepen} target="_blank" rel="noopener noreferrer"><img src={codepenwsmall} alt="CodePen"/><p>CodePen</p></a></li>}
+                    {(data.live !== "") && <li><a className="live-site" href={data.live} target="_blank" rel="noopener noreferrer"><img src={websitewsmall} alt="Live Site"/><p>Live Site</p></a></li>}
                 </ul>
                 <p className="description">{data.description}</p>
             </div>

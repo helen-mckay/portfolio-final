@@ -1,16 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import githubw from '../../Style/Images/github-w.png';
-import codepenw from '../../Style/Images/codepen-w.png';
-import linkedinw from '../../Style/Images/linkedin-w.png';
-import emailw from '../../Style/Images/email-w.png';
+import githubwsmall from '../../Style/Images/github-w-small.png';
+import codepenwsmall from '../../Style/Images/codepen-w-small.png';
+import linkedinwsmall from '../../Style/Images/linkedin-w-small.png';
+import emailwsmall from '../../Style/Images/email-w-small.png';
 
-import reactlogo from '../../Style/Images/reactlogo.png';
-import javascriptlogo from '../../Style/Images/javascriptlogo.png';
-import html5logo from '../../Style/Images/html5logo.png';
-import css3logo from '../../Style/Images/css3logo.png';
-import firebaselogo from '../../Style/Images/firebaselogo.png';
+import reactlogosmall from '../../Style/Images/reactlogo-small.png';
+import javascriptlogosmall from '../../Style/Images/javascriptlogo-small.png';
+import html5logosmall from '../../Style/Images/html5logo-small.png';
+import css3logosmall from '../../Style/Images/css3logo-small.png';
+import firebaselogosmall from '../../Style/Images/firebaselogo-small.png';
 
 import './Home.css';
 
@@ -71,11 +71,11 @@ const Home = () => {
                 <p>But I've got a special focus on single-page web applications.</p>
                 <h4>Top Skills:</h4>
                 <ul>
-                    <li><img src={reactlogo} alt="React"/></li>
-                    <li><img src={javascriptlogo} alt="JavaScript"/></li>
-                    <li><img src={html5logo} alt="HTML5"/></li>
-                    <li><img src={css3logo} alt="CSS3"/></li>
-                    <li><img src={firebaselogo} alt="Firebase"/></li>
+                    <li><img src={reactlogosmall} alt="React"/></li>
+                    <li><img src={javascriptlogosmall} alt="JavaScript"/></li>
+                    <li><img src={html5logosmall} alt="HTML5"/></li>
+                    <li><img src={css3logosmall} alt="CSS3"/></li>
+                    <li><img src={firebaselogosmall} alt="Firebase"/></li>
                 </ul>
             </section>
             <div id="triangle-3"></div>
@@ -86,8 +86,8 @@ const Home = () => {
                     <Link to="/portfolio">My Portfolio</Link>
                     <p>Check out my code on GitHub and CodePen:</p>
                     <ul>
-                        <li><a href="https://github.com/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={githubw} alt="GitHub"/></a></li>
-                        <li><a href="https://codepen.io/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={codepenw} alt="CodePen"/></a></li>
+                        <li><a href="https://github.com/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={githubwsmall} alt="GitHub"/></a></li>
+                        <li><a href="https://codepen.io/helen-mckay" target="_blank" rel="noopener noreferrer"><img src={codepenwsmall} alt="CodePen"/></a></li>
                     </ul>
                 </div>
             </section>
@@ -102,8 +102,8 @@ const Home = () => {
                     <h3>Let's get connected.</h3>
                     <p>Connect with me on LinkedIn and/or send me an email:</p>
                     <ul>
-                        <li><a href="https://linkedin.com/in/helen-mckay-htx" target="_blank" rel="noopener noreferrer"><img src={linkedinw} alt="LinkedIn"/></a></li>
-                        <li><a href="mailto:helen.mckay@comcast.net" target="_blank" rel="noopener noreferrer"><img src={emailw} alt="Email"/></a></li>
+                        <li><a href="https://linkedin.com/in/helen-mckay-htx" target="_blank" rel="noopener noreferrer"><img src={linkedinwsmall} alt="LinkedIn"/></a></li>
+                        <li><a href="mailto:helen.mckay@comcast.net" target="_blank" rel="noopener noreferrer"><img src={emailwsmall} alt="Email"/></a></li>
                     </ul>
                 </div>
             </section>
