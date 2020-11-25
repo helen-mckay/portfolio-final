@@ -42,7 +42,7 @@
 @media screen and (min-width: 600px)
 {
     #Bio-hero {
-        height: 600px;
+        height: 800px;
         background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 2-min.jpg');
         background-size: cover;
         background-position: center center;
