@@ -1,10 +1,9 @@
 #hero {
-    height: 400px;
     color: var(--gray);
     display: flex;
     flex-flow: column nowrap;
-    padding: 0.25rem;
     background-color: white;
+    padding: 0.5rem;
 }
 
 /* okay, so the current image works well on mobile but looks bad on desktop: serve a different version of image for larger breakpoints */
