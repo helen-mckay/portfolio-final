@@ -1,7 +1,7 @@
 #hero {
     background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 1 desktop-min.jpg');
     background-size: cover;
-    background-position: center left;
+    background-position: center center;
     height: 600px;
     color: var(--white);
     display: flex;
