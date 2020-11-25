@@ -8,13 +8,6 @@
 .PortfolioCard0, .PortfolioCard1, .PortfolioCard2 {
     padding: 0.25rem;
     margin: 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
 }
 
 .PortfolioCard0 {
@@ -31,17 +24,10 @@
 
 .PortfolioCardImage {
     width: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-    justify-self: center;
 }
 
 .PortfolioCardImage p {
     color: black;
-    margin: auto;
 }
 
 .PortfolioCardImage img {
@@ -50,18 +36,6 @@
 }
 
 .PortfolioCard-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     background-color: white;
     padding: 1rem;
 }
