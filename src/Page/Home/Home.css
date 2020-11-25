@@ -1,7 +1,7 @@
 #hero {
     background-image: linear-gradient(rgba(50, 50, 50, 0.3), rgba(50, 50, 50, 0.3)), url('../../Style/Images/website photo 1.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
     height: 600px;
     color: var(--white);
     display: flex;
@@ -77,10 +77,6 @@ span {
     font-weight: bold;
     font-size: 2.5rem;
     line-height: 3.25rem;
-}
-
-#white-1 {
-    padding-top: 4rem;
 }
 
 .white-section p {
@@ -276,10 +272,15 @@ span {
 
     #hero {
         height: 800px;
+        background-position: center center;
     }
 
     #hero-content {
         justify-content: flex-start;
+    }
+
+    #white-1 {
+        padding-top: 4rem;
     }
 
     #triangle-1 {
