@@ -1,28 +1,51 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 versions
+*/
+
 header {
+    display: -ms-grid;
     display: grid;
     padding: 0.5rem;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
+        grid-template-areas:
         "title media"
         "nav nav";
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: var(--offwhite);
 }
 
 header h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     font-size: 3rem;
     color: var(--accent-orange);
     font-weight: bold;
     grid-area: title;
-    justify-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
     text-align: center;
     margin: 0 1rem;
 }
 
 #media {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     width: 100%;
     grid-area: media;
@@ -37,11 +60,16 @@ header h1 {
 
 .mediaLink {
     border-radius: 50%;
+    -webkit-transition: -webkit-filter ease 0.3s;
+    transition: -webkit-filter ease 0.3s;
+    -o-transition: filter ease 0.3s;
     transition: filter ease 0.3s;
+    transition: filter ease 0.3s, -webkit-filter ease 0.3s;
 }
 
 .mediaLink:hover {
-    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
 }
 
 .mediaLink img {
@@ -50,18 +78,34 @@ header h1 {
 }
 
 nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-area: nav;
     margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
 
 nav ul li {
@@ -84,13 +128,18 @@ nav ul li a {
     background-color: var(--accent-blue);
     color: white;
     padding: 0.45rem;
+    -webkit-transition: -webkit-filter ease 0.3s;
+    transition: -webkit-filter ease 0.3s;
+    -o-transition: filter ease 0.3s;
     transition: filter ease 0.3s;
+    transition: filter ease 0.3s, -webkit-filter ease 0.3s;
     border-bottom: none;
     display: none;
 }
 
 #resume-link:hover {
-    filter: brightness(85%);
+    -webkit-filter: brightness(85%);
+            filter: brightness(85%);
 }
 
 #resume-link-li {
@@ -100,33 +149,48 @@ nav ul li a {
 @media screen and (min-width: 600px)
 {
     nav {
-        justify-content: center;
-        justify-self: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-grid-column-align: center;
+            justify-self: center;
     }
 
     nav ul {
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     #media {
-        justify-self: end;
-        align-self: center;
+        -ms-grid-column-align: end;
+            justify-self: end;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     header {
         padding: 0.4rem 3rem 0.4rem 3rem;
+        -ms-grid-columns: 4fr 1fr;
         grid-template-columns: 4fr 1fr;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     header h1 {
-        justify-self: start;
+        -ms-grid-column-align: start;
+            justify-self: start;
         text-align: left;
         font-size: 3.5rem;
     }
 
     #media {
-        flex-flow: row nowrap;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
     }
 
     #media li {
@@ -141,7 +205,8 @@ nav ul li a {
 @media screen and (min-width: 800px)
 {
     nav {
-        justify-self: start;
+        -ms-grid-column-align: start;
+            justify-self: start;
     }
 
 }

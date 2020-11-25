@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 versions
+*/
+
 #Admin h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -6,16 +13,21 @@
 @media screen and (min-width: 800px)
 {
     #Admin-cards {
+        display: -ms-grid;
         display: grid;
         grid-auto-rows: auto;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
 @media screen and (min-width: 1000px)
 {
     #Admin-cards {
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }

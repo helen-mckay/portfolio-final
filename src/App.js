@@ -7,7 +7,6 @@ import ProtectedRoute from './Tool/ProtectedRoute';
 import ErrorBoundary from './Tool/ErrorBoundary';
 
 import Header from './Style/Header/Header';
-import './App.css';
 
 const Portfolio = React.lazy(() => import('./Page/Portfolio/Portfolio'));
 const SignIn = React.lazy(() => import('./Page/SignIn/SignIn'));

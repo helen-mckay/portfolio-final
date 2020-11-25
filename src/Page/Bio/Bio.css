@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 versions
+*/
+
 #Bio {
     padding: 1rem;
 }
 
 #Bio-hero {
     height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -42,6 +51,8 @@
 {
     #Bio-hero {
         height: 800px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0.3)), to(rgba(25, 25, 25, 0.3))), url('../../Style/Images/website photo 2-min.jpg');
+        background-image: -o-linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 2-min.jpg');
         background-image: linear-gradient(rgba(25, 25, 25, 0.3), rgba(25, 25, 25, 0.3)), url('../../Style/Images/website photo 2-min.jpg');
         background-size: cover;
         background-position: center center;

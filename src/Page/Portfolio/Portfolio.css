@@ -1,4 +1,10 @@
-/* TO-DO: figure out how to display the portfolio cards in a satisfying manner */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 versions
+*/
+
 #Portfolio {
     background-color: var(--offwhite);
 }
@@ -7,16 +13,21 @@
 {
     #Portfolio {
         padding: 1rem;
+        display: -ms-grid;
         display: grid;
         grid-auto-rows: auto;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 
 @media screen and (min-width: 1000px)
 {
     #Portfolio {
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
