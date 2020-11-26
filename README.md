@@ -75,7 +75,7 @@ const AdminCardImageFetcher = (props) => {
 
 If there is a new image for the AdminCard, then remove the current image (if there is one). Then, store the new image at `projects/[doc_id]/[doc_id].jpg` in Storage. Then, send the `doc_id` and state values to the function `updateCard()` (in **Admin.js**, passed down as a prop to **AdminCard** component).
 
-In **AdminCard.js**:
+The form submission handler for submitted changes to an **AdminCard** in **AdminCard.js**:
 
 ```
 const handleSubmit = (e) => {
@@ -84,10 +84,14 @@ const handleSubmit = (e) => {
         //there is a new image to be uploaded
         if (newImage)
         {
+            console.log("adding a new image");
+
             //there is already an image for this post
             if (hasImage)
             {
                 //delete it and replace it
+
+                console.log("there is already an image");
 
                 firebase.storage().ref(`projects/${doc_id}/${doc_id}.jpg`).delete().catch(error => {
                     console.log(error);
@@ -101,6 +105,8 @@ const handleSubmit = (e) => {
             {
                 //there is not already an image for this post
                 //so, put the image there
+
+                console.log("there is no current image");
 
                 firebase.storage().ref(`projects/${doc_id}/${doc_id}.jpg`).put(newImage, metaData).catch(error => {
                     console.log("something went wrong");
