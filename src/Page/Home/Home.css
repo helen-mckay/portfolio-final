@@ -374,6 +374,12 @@ span {
             ". content";
     }
 
+    #white-2 ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: flex-start;
+    }
+
     #color-1-content {
         grid-area: content;
     }
