@@ -18,9 +18,9 @@ In other words, this application is fully CRUD. I can manage everything in the a
 
 ## Featured snippets
 
-The bulk of the application logic can be found in `AdminCard.js`. 
+The bulk of the application logic can be found in **AdminCard.js**. 
 
-Here's some featured snippets from `AdminCard.js`:
+Here's some featured snippets from **AdminCard.js**:
 
 ### Checking if the card has an image associated with it in Storage
 
@@ -48,7 +48,7 @@ const AdminCard = ({doc_id, data, updateCard, deleteCard}) => {
 
 ### If an AdminCard has an associated image, then display that image
 
-AdminCard renders AdminCardImageFetcher component, passing along `doc_id`.
+**AdminCard** renders **AdminCardImageFetcher** component, passing along `doc_id`.
 
 ```
  {hasImage && <AdminCardImageFetcher doc_id={doc_id}/>}
@@ -73,9 +73,9 @@ const AdminCardImageFetcher = (props) => {
 ```
 ### Submitting changes to an AdminCard
 
-If there is a new image for the AdminCard, then remove the current image (if there is one). Then, store the new image at `projects/[doc_id]/[doc_id]`. Then, send the `doc_id` and state values to the function `updateCard()` (in `Admin.js`, passed down as a prop to `AdminCard` component).
+If there is a new image for the AdminCard, then remove the current image (if there is one). Then, store the new image at `projects/[doc_id]/[doc_id]`. Then, send the `doc_id` and state values to the function `updateCard()` (in **Admin.js**, passed down as a prop to **AdminCard** component).
 
-In `AdminCard.js`:
+In **AdminCard.js**:
 
 ```
 const handleSubmit = (e) => {
@@ -128,7 +128,7 @@ const handleSubmit = (e) => {
         });
     }
 ```
-In `Admin.js`:
+In **Admin.js**:
 
 ```
 const updateCard = (id, newValues) => {
