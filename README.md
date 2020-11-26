@@ -84,14 +84,10 @@ const handleSubmit = (e) => {
         //there is a new image to be uploaded
         if (newImage)
         {
-            console.log("adding a new image");
-
             //there is already an image for this post
             if (hasImage)
             {
                 //delete it and replace it
-
-                console.log("there is already an image");
 
                 firebase.storage().ref(`projects/${doc_id}/${doc_id}.jpg`).delete().catch(error => {
                     console.log(error);
@@ -105,8 +101,6 @@ const handleSubmit = (e) => {
             {
                 //there is not already an image for this post
                 //so, put the image there
-
-                console.log("there is no current image");
 
                 firebase.storage().ref(`projects/${doc_id}/${doc_id}.jpg`).put(newImage, metaData).catch(error => {
                     console.log("something went wrong");
