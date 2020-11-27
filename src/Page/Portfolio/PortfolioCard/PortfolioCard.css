@@ -8,18 +8,19 @@
 .PortfolioCard0, .PortfolioCard1, .PortfolioCard2 {
     padding: 0.25rem;
     margin: 0.5rem;
+    background-color: white;
 }
 
 .PortfolioCard0 {
-    background-color: var(--accent-orange);
+    border: 2px solid var(--accent-orange);
 }
 
 .PortfolioCard1 {
-    background-color: var(--accent-red);
+    border: 2px solid var(--accent-red);
 }
 
 .PortfolioCard2 {
-    background-color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
 }
 
 .PortfolioCardImage {
@@ -37,7 +38,6 @@
 }
 
 .PortfolioCard-content {
-    background-color: white;
     padding: 1rem;
 }
 
